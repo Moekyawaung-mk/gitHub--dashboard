@@ -1,6 +1,6 @@
 // GitHub Dashboard JavaScript
 // Replace with your GitHub username
-const GITHUB_USERNAME = 'Moekyawaung-developer';
+const GITHUB_USERNAME = 'Moekyawaung-mk';
 const API_BASE = 'https://api.github.com';
 
 // Cache for API responses
