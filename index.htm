@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moe Kyaw Aung — GitHub Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- GitHub Calendar -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar/dist/github-calendar-responsive.css"/>
+  <script src="https://unpkg.com/github-calendar/dist/github-calendar.min.js"></script>
+</head>
+
+<body>
+
+  <h1 class="title">🔥 Moe Kyaw Aung — GitHub Analytics Dashboard</h1>
+
+  <!-- DAILY ACTIVITY -->
+  <section id="activity-section">
+    <div class="section-title">🔥 GitHub Daily Activity</div>
+
+    <div class="card">
+      <h3>Latest Commits</h3>
+      <div id="latest-commits">Loading...</div>
+    </div>
+
+    <div class="card">
+      <h3>Pull Requests</h3>
+      <div id="latest-prs">Loading...</div>
+    </div>
+
+    <div class="card">
+      <h3>Issues</h3>
+      <div id="latest-issues">Loading...</div>
+    </div>
+  </section>
+
+  <!-- PINNED REPOS -->
+  <section id="pinned-section">
+    <div class="section-title">📌 Pinned Repositories</div>
+    <div id="pinned-repos"></div>
+  </section>
+
+  <!-- PROFILE STATS -->
+  <section id="profile-stats">
+    <div class="section-title">👤 GitHub Profile Stats</div>
+    <div id="stats-box"></div>
+  </section>
+
+  <!-- CONTRIBUTION CALENDAR -->
+  <section id="calendar-section">
+    <div class="section-title">📅 Contribution Calendar</div>
+    <div id="github-calendar"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline-section">
+    <div class="section-title">🕒 Activity Timeline</div>
+    <div id="activity-timeline"></div>
+  </section>
+
+  <!-- REPO ACTIVITY -->
+  <section id="repo-activity">
+    <div class="section-title">📊 Commits per Repository</div>
+    <canvas id="repoChart"></canvas>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="language-chart">
+    <div class="section-title">🧠 Language Usage</div>
+    <canvas id="langChart"></canvas>
+  </section>
+
+  <!-- FOLLOWERS -->
+  <section id="followers-section">
+    <div class="section-title">👥 Followers</div>
+    <div id="followers-list"></div>
+  </section>
+
+  <!-- RELEASE DOWNLOADS -->
+  <section id="release-downloads">
+    <div class="section-title">📦 Release Downloads</div>
+    <select id="releaseRepo"></select>
+    <canvas id="releaseChart"></canvas>
+  </section>
+
+  <!-- ISSUES HEATMAP -->
+  <section id="issues-heatmap">
+    <div class="section-title">🐞 Issues Heatmap</div>
+    <div id="issuesGrid"></div>
+  </section>
+
+  <!-- HOURLY HEATMAP -->
+  <section id="hourly-heatmap">
+    <div class="section-title">⏱ Hourly Commit Activity</div>
+    <div id="hourGrid"></div>
+  </section>
+
+  <!-- DEPENDENCY TREE -->
+  <section id="dependency-graph">
+    <div class="section-title">🌳 Dependency Graph</div>
+    <select id="depRepo"></select>
+    <pre id="depTree"></pre>
+  </section>
+
+  <!-- PR REVIEW STATS -->
+  <section id="review-stats">
+    <div class="section-title">🔍 PR Review Stats</div>
+    <canvas id="reviewChart"></canvas>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
